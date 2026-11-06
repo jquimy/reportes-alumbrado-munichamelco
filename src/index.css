@@ -1,0 +1,22 @@
+:root {
+  /* Colores tomados del logo */
+  --guinda: #7a1512;
+  --guinda-oscuro: #5c0f0d;
+  --dorado: #d99a00;
+  --crema: #faf6f0;
+  --texto: #2b2b2b;
+  --blanco: #ffffff;
+  --gris: #e6e1da;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: var(--crema);
+  color: var(--texto);
+}

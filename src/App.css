@@ -1,0 +1,273 @@
+.encabezado {
+  background: var(--blanco);
+  border-bottom: 4px solid var(--dorado);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.encabezado img {
+  height: 70px;
+}
+
+.encabezado h1 {
+  font-size: 1.1rem;
+  color: var(--guinda);
+  line-height: 1.2;
+}
+
+.encabezado p {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.contenedor {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.tarjeta {
+  background: var(--blanco);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid var(--guinda);
+}
+
+/* Para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+  .encabezado img {
+    height: 55px;
+  }
+
+  .encabezado h1 {
+    font-size: 0.95rem;
+  }
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulario h2 {
+  color: var(--guinda);
+  margin-bottom: 8px;
+}
+
+.formulario label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.formulario input[type="text"],
+.formulario select,
+.formulario textarea {
+  padding: 12px;
+  border: 1px solid var(--gris);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  outline: 2px solid var(--dorado);
+  border-color: var(--dorado);
+}
+
+.boton-foto {
+  background: var(--blanco);
+  color: var(--guinda);
+  border: 2px dashed var(--guinda);
+  padding: 14px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.boton-foto:hover {
+  background: #fbeeee;
+}
+
+.vista-previa {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.boton-enviar {
+  background: var(--guinda);
+  color: var(--blanco);
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.boton-enviar:hover {
+  background: var(--guinda-oscuro);
+}
+
+.sesion {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--guinda);
+  font-weight: 600;
+}
+
+.sesion button {
+  background: transparent;
+  border: 1px solid var(--guinda);
+  color: var(--guinda);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sesion button:hover {
+  background: var(--guinda);
+  color: var(--blanco);
+}
+
+.error {
+  color: #b00020;
+  font-size: 0.9rem;
+}
+
+.formulario input[type="email"],
+.formulario input[type="password"] {
+  padding: 12px;
+  border: 1px solid var(--gris);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.titulo-panel {
+  color: var(--guinda);
+}
+
+.resumen {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filtros input,
+.filtros select {
+  flex: 1;
+  min-width: 160px;
+  padding: 10px;
+  border: 1px solid var(--gris);
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.reporte {
+  border: 1px solid var(--gris);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--blanco);
+}
+
+.reporte img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+.reporte-info {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+}
+
+.reporte-info h3 {
+  color: var(--guinda);
+  font-size: 1.05rem;
+}
+
+.etiqueta {
+  align-self: flex-start;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.etiqueta.pendiente {
+  background: #fff3cd;
+  color: #8a6100;
+}
+
+.etiqueta.atendido {
+  background: #d9f2de;
+  color: #1c6b34;
+}
+
+.boton-atender {
+  margin-top: 8px;
+  background: var(--guinda);
+  color: var(--blanco);
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton-atender:hover {
+  background: var(--guinda-oscuro);
+}
+
+.atendido-por {
+  margin-top: 6px;
+  color: #1c6b34;
+  font-style: italic;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  cursor: zoom-out;
+  z-index: 10;
+}
+
+.modal img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
