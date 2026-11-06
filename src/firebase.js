@@ -3,12 +3,12 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAenoTLhfaRJ4pAS8ESZF7ImuNgN0MbO0E",
-  authDomain: "reportes-alumbrado.firebaseapp.com",
-  projectId: "reportes-alumbrado",
-  storageBucket: "reportes-alumbrado.firebasestorage.app",
-  messagingSenderId: "814651952813",
-  appId: "1:814651952813:web:3f78d57785030c40388024",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
